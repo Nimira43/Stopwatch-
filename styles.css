@@ -61,3 +61,88 @@ body {
         transform: scale(1.05);
     }
 }
+
+.timer span {
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: beige;
+    margin-top: 10px;
+}
+
+button:nth-child(1) {
+    background-color: green;
+    transition: opacity 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+button:nth-child(2) {
+    background-color: red;
+    transition: opacity 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+button:nth-child(3) {
+    background-color: yellow;
+    color: black;
+    transition: opacity 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+button:nth-child(4) {
+    background-color: blue;
+    transition: opacity 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+button:nth-child(1):hover,
+button:nth-child(2):hover,
+button:nth-child(3):hover,
+button:nth-child(4):hover {
+    opacity: 0.6;
+}
+
+.lap-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.laps {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background: darkred;
+    color: beige;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+li {
+    padding: 1rem;
+    border-bottom: 1px solid beige;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li span {
+    font-weight: 700;
+}
